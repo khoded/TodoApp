@@ -2,9 +2,7 @@
 <head>
   <title>Todo List </title>
   <script
-    src="https://code.jquery.comhttps://code.jquery.com/jquery-1.12.4.js"
-    integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-    crossorigin="anonymous"></script>
+    src="https://code.jquery.comhttps://code.jquery.com/jquery-1.12.4.js"  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
     <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
     <body>
       <h1>My Todo List </h1>
@@ -14,9 +12,12 @@
             <button type="submit"> Add Item </button>
         </form>
         <ul>
-          <li> Item 1 </li>
-          <li> Item 2 </li>
-          <li> Item 3 </li>
+
+              <li> <%= todos[0].item %> </li>
+                <li> <%= todos[1].item %> </li>
+                  <li> <%= todos[2].item %> </li>
+                  
+
         </ul>
       </div>
       </body>
