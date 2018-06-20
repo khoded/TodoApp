@@ -7,17 +7,14 @@
     <body>
       <h1>My Todo List </h1>
       <div id="todo-table">
-        <form>
+        <form method="post" >
             <input type="text" name="item" placeholder="Addnew item..." required />
             <button type="submit"> Add Item </button>
         </form>
         <ul>
-
-              <li> <%= todos[0].item %> </li>
-                <li> <%= todos[1].item %> </li>
-                  <li> <%= todos[2].item %> </li>
-                  
-
+<% for(var i =0; i <todos.length; i++) { %>
+              <li> <%= todos[i].item %> </li>
+<% } %>
         </ul>
       </div>
       </body>
